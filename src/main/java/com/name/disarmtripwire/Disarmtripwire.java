@@ -47,7 +47,7 @@ public class Disarmtripwire {
 
         @SubscribeEvent
         public static void onBlockBreak(BlockEvent.BreakEvent event) {
-            if (event.getState().is(Blocks.TRIPWIRE) && !event.getPlayer().getMainHandItem().isEmpty() && event.getPlayer().getMainHandItem().canPerformAction(ToolActions.SHEARS_DISARM)) {
+            if (event.getState().is(Blocks.TRIPWIRE) && event.getState().getValue(ATTACHED) && !event.getPlayer().getMainHandItem().isEmpty() && event.getPlayer().getMainHandItem().canPerformAction(ToolActions.SHEARS_DISARM)) {
                 event.getLevel().setBlock(event.getPos(), event.getState().setValue(DISARMED, true), Block.UPDATE_INVISIBLE);
                 event.setCanceled(true);
             }
