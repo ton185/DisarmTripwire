@@ -1,4 +1,5 @@
 # DisarmTripwire
+https://modrinth.com/mod/disarmtripwire
 
 ## What?
 Forge disabled the ability to disarm tripwire by left-clicking it with shears. This mod brings that ability back.
