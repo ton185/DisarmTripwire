@@ -2,6 +2,8 @@
 https://modrinth.com/mod/disarmtripwire
 https://www.curseforge.com/minecraft/mc-mods/disarmtripwire
 
+
+
 ## What?
 Forge disabled the ability to disarm tripwire by left-clicking it with shears. This mod brings that ability back.
 
@@ -9,3 +11,4 @@ Forge disabled the ability to disarm tripwire by left-clicking it with shears. T
 It's very simple, the actual logic for disarmed tripwire is still in the game, so all I have to do is add an event handler to disarm the tripwire when left-clicking with shears.
 
 **If you want me to port this mod to another version of forge then make an issue here.**
+**I will not port the mod to versions above 1.21.2 as Mojang themselves have patched it in 1.21.2+ which means I would have to reimplement the bug.**
